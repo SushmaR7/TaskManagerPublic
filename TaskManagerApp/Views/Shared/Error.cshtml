@@ -1,0 +1,16 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+
+<div>
+    <label for="path_err">Path:</label>
+    <p id="path_err">@ViewBag.ExceptionPath</p>
+    <label for="msg_err">Exception Message:</label>
+    <p id="msg_err">@ViewBag.ExceptionMessage</p>
+    <label for="InExp_err">Inner exception:</label>
+    <p id="InExp_err">@ViewBag.innerExp </p>
+    <label for="Data_err">The error Data:</label>
+    <p id="Data_err"> @ViewBag.data</p>
+</div>
